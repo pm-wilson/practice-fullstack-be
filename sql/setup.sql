@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS hikes;
+
+CREATE TABLE hikes (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  name TEXT NOT NULL,
+  address TEXT NOT NULL,
+  length INT NOT NULL,
+  elevation INT NOT NULL,
+  note TEXT
+);
